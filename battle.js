@@ -6,10 +6,15 @@ var location3 = 5;
 var guess; 
 var hits = 0;
 var guesses = 0;
-
 var isSunk = false;
 
 // checking the ship is sunk or not
+let view = {
+    displayMessage = function (msg) {
+        let messageArea = document.getElementById('messageArea')
+        messageArea.innerHTML = msg;
+    }
+}
 
 
 while (isSunk == false) {
